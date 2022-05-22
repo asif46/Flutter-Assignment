@@ -15,6 +15,7 @@ class ResultScreen extends StatefulWidget {
 
 class _ResultScreenState extends State<ResultScreen> {
   bool isMatch = true;
+
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
@@ -28,9 +29,7 @@ class _ResultScreenState extends State<ResultScreen> {
       ),
       body: Container(
         margin: EdgeInsets.only(
-            top: Responsive.isMobile(context)
-                ? screenSize.height * 0.05
-                : 20,
+            top: Responsive.isMobile(context) ? screenSize.height * 0.05 : 20,
             left: Responsive.isMobile(context) ? 10 : 30,
             right: Responsive.isMobile(context) ? 10 : 30),
         child: Column(
@@ -93,7 +92,8 @@ class _ResultScreenState extends State<ResultScreen> {
                 padding:
                     const EdgeInsets.symmetric(vertical: 12, horizontal: 5),
                 backgroundColor: AppColors.white,
-                shadowColor: Colors.black, //CircleAvatar
+                shadowColor: Colors.black,
+                //CircleAvatar
                 label: Text(
                   option.optionValue,
                   textAlign: TextAlign.center,
@@ -111,7 +111,9 @@ class _ResultScreenState extends State<ResultScreen> {
                   }),
               child: Container(
                 height: 50,
-                width:  Responsive.isMobile(context)?screenSize.width * 0.4:screenSize.width * 0.2,
+                width: Responsive.isMobile(context)
+                    ? screenSize.width * 0.4
+                    : screenSize.width * 0.2,
                 decoration: BoxDecoration(
                     color: isMatch
                         ? AppColors.logoColor
@@ -132,7 +134,9 @@ class _ResultScreenState extends State<ResultScreen> {
                   }),
               child: Container(
                 height: 50,
-                width:  Responsive.isMobile(context)?screenSize.width * 0.4:screenSize.width * 0.2,
+                width: Responsive.isMobile(context)
+                    ? screenSize.width * 0.4
+                    : screenSize.width * 0.2,
                 decoration: BoxDecoration(
                     color: !isMatch
                         ? AppColors.logoColor

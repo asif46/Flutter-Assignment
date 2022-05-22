@@ -8,10 +8,8 @@ class ButtonWidget extends StatelessWidget {
   final double minWidth;
 
   const ButtonWidget(
-      {Key? key,
-      this.title = "Next",
-      this.onPressed,
-     required  this.minWidth });
+      {Key? key, this.title = "Next", this.onPressed, required this.minWidth});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -50,4 +48,3 @@ class ButtonWidget extends StatelessWidget {
     );
   }
 }
-

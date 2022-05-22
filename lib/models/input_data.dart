@@ -6,6 +6,7 @@ List<InputData> inputDataFromJson(String str) =>
 class Option {
   String optionValue;
   bool isSelected;
+
   Option({
     this.isSelected = false,
     required this.optionValue,
@@ -14,13 +15,14 @@ class Option {
 
 class InputData {
   InputData({
-    this.selectedCount=0,
+    this.selectedCount = 0,
     required this.option1,
     required this.option2,
     required this.option3,
     required this.option4,
     required this.trueOption,
   });
+
   int selectedCount;
   Option option1;
   Option option2;

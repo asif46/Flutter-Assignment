@@ -18,12 +18,13 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   PageController controller = PageController();
   int currentPage = 0;
+
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        title:const Text("Matches"),
+        title: const Text("Matches"),
         centerTitle: true,
         backgroundColor: AppColors.logoColor,
         elevation: 0.0,
@@ -137,7 +138,8 @@ class _HomeScreenState extends State<HomeScreen> {
           }
         }),
         child: Padding(
-          padding:  EdgeInsets.symmetric(vertical: Responsive.isMobile(context)?0:5),
+          padding: EdgeInsets.symmetric(
+              vertical: Responsive.isMobile(context) ? 0 : 5),
           child: Row(
             children: [
               Theme(

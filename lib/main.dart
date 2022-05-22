@@ -1,5 +1,4 @@
-import 'package:assignment/screens/home_screen.dart';
-import 'package:assignment/screens/show_cases.dart';
+import 'package:assignment/widgets/show_cases_context.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:const ShowCasesScreen(),
+      home: const ShowCasesScreen(),
     );
   }
 }
