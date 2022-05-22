@@ -43,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
             controller: controller,
             itemBuilder: (context, position) {
               return Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(
                     height: 10,
@@ -71,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisAlignment: Responsive.isMobile(context)
                         ? MainAxisAlignment.spaceBetween
-                        : MainAxisAlignment.center,
+                        : MainAxisAlignment.start,
                     children: [
                       ButtonWidget(
                         onPressed: () => currentPage >= 1

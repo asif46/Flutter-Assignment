@@ -85,6 +85,7 @@ class _ShowCaseQuestionState extends State<ShowCaseQuestion> {
     Size screenSize = MediaQuery.of(context).size;
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         const SizedBox(
           height: 10,
@@ -195,7 +196,7 @@ class _ShowCaseQuestionState extends State<ShowCaseQuestion> {
         Row(
           mainAxisAlignment: Responsive.isMobile(context)
               ? MainAxisAlignment.spaceBetween
-              : MainAxisAlignment.center,
+              : MainAxisAlignment.start,
           children: [
             Showcase(
                 key: _three,
